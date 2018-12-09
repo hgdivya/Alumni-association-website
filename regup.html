@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update information</title>
+<style>
+body {
+    background-image: url("images/image19.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg{
+padding:40px;
+text-align:left;
+position:absolute;
+top:30px;
+left:500px;
+width:700px;
+height:550px;
+font-family:Algerian;
+			  box-shadow: 10px 10px 10px grey, 0 0 10px black;
+			  background-color:rgba(255,255,255,0.3);
+color:rgba(0,0,0,0.8);
+
+}
+
+.in-line { 
+  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+input[type="submit"]
+{box-shadow: 10px 10px 10px grey, 0 0 10px black;
+   width:150px;
+   height:35px;
+background-color:rgba(255,255,255,0.5);
+
+}
+ul {
+             box-shadow: 10px 10px 15px rgba(179, 71, 0,0.6), 0 0 10px rgba(128, 51, 0,0.8);
+    border-radius: 5px;
+	font-size:17px;
+    font-family:Algerian;
+    list-style-type: none;
+     font-weight:bold;
+    
+    overflow: hidden;
+    position:absolute;
+    
+		}
+		li {
+              box-sizing: border-box;   
+				
+			}
+			li a {
+				  
+				display: block;
+				
+				text-align: center;
+				padding: 14px 30px;
+				text-decoration: none;
+			}
+            a{
+			        color:rgba(0,0,0,0.8);
+			}
+			
+			li a:hover:not(.active) {
+			  box-shadow: 10px 10px 10px rgba(179, 71, 0,0.4), 0 0 10px rgba(128, 51, 0,0.8);
+				border-radius: 5px;
+
+				 background-color:rgba(255, 179, 128,0.5);
+			       color:rgba(0,0,0,0.6);
+			}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+history.pushState(null,null,location.href);
+window.onpopstate=function(){
+history.go(1);};
+</script>
+
+<div class="reg">
+<h1 style="text-align:center;font-size:50px;">Update!</h1>
+<form  class="form-sty" action="regup.php" method="POST">
+
+<label>Enter current username:</label>
+<input type="text" name='username' value=""><br><br>
+
+<h2>CONTACT INFORMATION</h2>
+<label>Address:</label>
+<input type="text" name='address' value=""><br><br>
+<label>Email ID:</label>
+<input type="email" name='email' value=""><br><br>
+<label>City:</label>
+<input type="text" name='city' value=""><br><br>
+<label>Contact:</label>
+<input type="tel" name='contact' value=""><br><br>
+
+
+<h2>JOB DEATILS</h2>
+<label>Designation:</label>
+<input type="text" name='designation' value=""><br><br>
+<label>Organisation:</label>
+<input type="text" name='organisation' value=""><br><br>
+
+<input type='submit' value='Update' style="margin-left: 45%;font-family:Algerian;"><br><br><br>
+
+</form>
+
+</div>
+<ul>
+<li><a href="alst.html">HOME</a><br></li>
+<li><a href="profile.php">PROFILE</a><br></li>
+<li><a href="search.html">SEARCH ALUMNI</a><br></li>
+
+<li><a href="alchpass.html">CHANGE PASSWORD</a><br></li>
+<li><a href="alumni.html">LOGOUT</a></li>
+</ul>
+
+</body>
+</html>

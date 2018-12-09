@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Admin login</title>
+<style>
+body {
+    background-image: url("images/image15.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg{
+padding:40px;
+text-align:left;
+position:absolute;
+top:150px;
+left:550px;
+width:500px;
+height:250px;
+font-family:Algerian;
+			  box-shadow: 10px 10px 10px grey, 0 0 10px black;
+			  background-color:rgba(255,255,255,0.3);
+color:rgba(0,0,0,0.8);
+
+}
+input[type="submit"]
+{box-shadow: 10px 10px 10px grey, 0 0 10px black;
+   width:150px;
+   height:35px;
+background-color:rgba(255,255,255,0.5);
+font-family:Algerian;
+}
+
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+history.pushState(null,null,location.href);
+window.onpopstate=function(){
+history.go(1);};
+</script>
+<form action="alumni.html">
+<input type="submit"  name="" value="Back" style="font-family:Algerian;">
+
+</form>
+<div class="reg">
+<form action="alstlogin.php" method="POST">
+<h1>LOGIN</h1>
+<label>User Name:</label>
+<input type="text" name='user_name' value="" required><br><br>
+<label>PASSWORD:</label>
+<input type="password" name='password' value="" required><br><br>
+<input type='submit' value='sign in' style="margin-left: 35%"><br><br>
+
+
+</form>
+</div>
+</body>
+</html>

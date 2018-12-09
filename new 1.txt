@@ -1,0 +1,94 @@
+<?php
+$con=mysqli_connect ("127.0.0.1","root","","alumnidb");
+
+
+if(!$con){
+   echo "failed to connect:1";
+}
+
+if(!mysqli_select_db($con,'alumnidb'))
+{   echo 'database 1 not selected';
+}
+
+if(preg_match("/([%\$#\*]+)/",$_POST ['First_name']))
+	{
+		
+     	       echo "<script>alert('no special characters allowed!!!!');</script>";
+			    header("refresh:0; url=regi.html");
+			   
+	}
+	else{
+		 $name = $_POST ['First_name'];
+	}
+	if(preg_match("/([%\$#\*]+)/",$_POST ['Last_name']))
+	{
+		
+     	       echo "<script>alert('no special characters allowed!!!!');</script>";
+			    header("refresh:0; url=regi.html");
+			   
+	}
+	else{
+		 $name = $_POST ['Last_name'];
+	}
+
+$dob=$POST['dob']
+$gender=$POST['gender']
+
+$address=$POST['address']
+
+$email=$POST['email']
+     
+$city=$POST['city']
+$contact=$POST['contact']
+
+
+$user_name=$POST['user_name']
+$password=$POST['password']
+$c_password=$POST['c_password']
+$course=$POST['course']
+$year_of_pass=$POST['yop']
+$attach_pic=$POST['acp']
+
+$designation=$POST['designation']
+$organisation=$POST['organisation']
+
+
+if($c_password != $password)
+{
+	echo "confirm password"."<br>"."<a href='register.html'>click here to retry</a>";
+}
+else{
+	$sql = "INSERT INTO alumni (firstname,lastname,dob,gender,address,email,city,phno,username,course,yop,pic,design,organi)
+VALUES ('$first_name','$last_name','$dob','$gender',,'$address','$email','$city','$contact','$user_name','$course','$year_of_pass','$attach_pic','$designation','$organisation')";
+
+$result= mysqli_query($con,$sql);
+
+	
+	$sql1="INSERT INTO alumni_login (username,passwd) VALUES('$username','$password')";
+	
+	
+    $result1= mysqli_query($con,$sql1);
+	
+if( $result1 )//&& $result1)
+{
+    
+     	       echo "<script>alert(' inserted successfully!!!!');</script>";
+    header("refresh:0; url=login1.html");
+ }
+ else {
+	    echo "<script>alert('  error inserting!!!!');</script>";
+    header("refresh:0; url=regi.html");
+ }
+
+
+} 
+	}
+ 
+
+ mysqli_close($con);
+
+
+
+
+
+?>

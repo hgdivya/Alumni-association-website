@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Alumni association website</title>
+
+<style>
+		body {
+		   
+	
+			
+			background-image: url("images/image14.jpg");
+			width:100%;
+			height: 100%; 
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		ul {
+             box-shadow: 10px 10px 15px rgba(179, 71, 0,0.6), 0 0 10px rgba(128, 51, 0,0.8);
+    border-radius: 5px;
+	font-size:17px;
+    font-family:Algerian;
+    list-style-type: none;
+    margin: 100;
+    padding:30;
+    overflow: hidden;
+   box-sizing: border-box;   
+
+		}
+		header{
+			border-radius: 5px;
+			text-align:center;
+			font-family:Algerian;
+			color:rgba(0,0,0,0.6);
+			font-size:30px;
+			
+			}
+			li {
+              box-sizing: border-box;   
+				float: left;
+			}
+			li a {
+				  
+				display: block;
+				
+				text-align: center;
+				padding: 14px 30px;
+				text-decoration: none;
+			}
+            a{
+			        color:rgba(0,0,0,0.8);
+			}
+			li a:hover:not(.active) {
+			  box-shadow: 10px 10px 10px rgba(179, 71, 0,0.4), 0 0 10px rgba(128, 51, 0,0.8);
+				border-radius: 5px;
+
+				 background-color:rgba(255, 179, 128,0.5);
+			       color:rgba(0,0,0,0.6);
+			}
+            .active {
+					background-color:rgba(255, 254, 230  , 0.8);
+				}
+			
+			.dot {
+				  height: 15px;
+				  width: 15px;
+				  margin: 0 2px;
+				  background-color: white;
+				  border-radius: 50%;
+				  display: inline-block;
+				  transition: background-color 0.6s ease;
+				  
+				}
+             
+			.mySlides {display:none
+			
+			}
+			.slideshow-container {
+			  width: 1500px;
+			  margin-top:63px;
+			  
+			  position: relative;
+			  
+			}
+			.active {
+				  background-color:rgba(255, 254, 230  , 0.2);
+				}
+			.left
+			{
+			position:relative;
+			animation:animateleft 1s}
+			@keyframes animateleft
+			{from{left:-10px;opacity:0} 
+			to{left:0;opacity:1}
+			}
+			
+			div{
+			 margin:2px;
+			 
+			}
+			.column1 {
+			
+				float: left;
+				
+				padding: 0px;
+				
+			}
+			.row1:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.column {
+			
+				float: left;
+		
+				padding: 0px;
+				
+			}
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			
+			@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.text1 {
+ font-family:Algerian;
+  color:rgba(0, 0, 0  , 0.8) ;
+  font-size: 30px;
+ 
+  position: relative;
+  text-align:center;
+
+  bottom: 190px;
+  width: 50%;
+  
+				}
+				.fig{
+				position:absolute;
+				top:345px;
+				left:780px;
+				width:700px;
+				height:350px;
+
+							  box-shadow: 10px 10px 10px rgba(179, 71, 0,0.6), 0 0 10px rgba(128, 51, 0,0.8);
+							  background-color:rgba(255, 179, 128,0.5);
+				color:blue;
+				}
+			#hidden {
+              display: none;
+            }
+            #visible:hover #hidden {
+              display: block;
+			  position: absolute;
+			  z-index: 1;
+            }
+</style>
+</head>
+<body>
+<script type="text/javascript">
+history.pushState(null,null,location.href);
+window.onpopstate=function(){
+history.go(1);};
+</script>
+<header >
+<div class="row1">
+<div class="column1">
+<img src="images/heimg.png" style="width:40%">
+</div>
+<div class="column1">
+<h1  >
+ALUMNI ASSOCIATION WEBSITE</h1>
+</div>
+</div>
+<MARQUEE style="font-size:25px;font-family:Lucida handwriting;" BEHAVIOR=SCROLL SCROLLAMOUNT=20  WIDTH="50%" HSPACE=20 >welcome !!</MARQUEE>
+</header>
+<ul>
+    <li> <a href="Alumni.html">Home     </a></li>
+	<li> <a href="aboutus.html">About us      </a></li>
+   <li> <a href="register.html">Registration      </a></li>
+   <li> <a href="feedback.html">Feedback      </a></li>
+  
+   
+ <li id="visible" ><a href="#" >Login        </a>
+     <ul id="hidden">
+	 <li><a href="adminlogin.html">Admin       </a></li>
+	 <li><a href="alstlogin.html">Alumni/Student      </a></li>
+	
+	 </ul>
+ </li>
+  
+</ul>
+<p>
+<div class="fig">
+<h2 style="text-align:center;font-family:Algerian;color:rgba(0,0,0,0.6);background-color:rgba(255,255,255,0.4);">EVENT NEWS</h2>
+<marquee behavior="scroll" direction="up" style="height:200px;text-align:center;font-family:Algerian;color:rgba(0,0,0,0.8);">#*#  Your upward scrolling text goes here</marquee>
+</div></p>
+
+<div class="slideshow-container">
+
+<div class="mySlides left">
+ 
+  <img src="images/image1.jpg" style="width:50%;">
+   <div class="text1">Come join us!!</div>
+</div>
+
+<div class="mySlides left">
+  
+  <img src="images/image2.jpg" style="width:50%;">
+  <div class="text1">Get info about alumni,contact them!!</div>
+</div>
+
+<div class="mySlides left">
+
+  <img src="images/image3.jpg" style="width:50%;">
+  <div class="text1">reach us out with any query!!</div>
+</div>
+<div class="mySlides left">
+ 
+  <img src="images/image4.jpg" style="width:50%;">
+ <div class="text1">Be part of Us!!</div>
+</div>
+
+</div>
+<div style="text-align:center;width:50%">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+ 
+</div>
+
+
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+
+<div style="background-color:rgba(0, 0, 0,0.3); color:rgba(255, 255, 255  , 0.8);text-align:center;">
+ <pre style="font-size:20px;font-family:Georgia"><b>
+            Contact Us: +91 9036187380
+          Email : alumniassoc97@gmail.com</b>
+</pre>
+</div>
+<footer style="text-align:center;color:white;background-color:rgba(0, 0, 0, 0.4)">
+<b> Copyright &copy alumni.com </b></footer>
+
+</body>
+</html>

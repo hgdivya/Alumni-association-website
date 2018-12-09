@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Change password</title>
+<style>
+body {
+    background-image: url("images/image19.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg{
+padding:40px;
+text-align:left;
+position:absolute;
+top:130px;
+left:600px;
+width:500px;
+height:260px;
+font-family:Algerian;
+			  box-shadow: 10px 10px 10px grey, 0 0 10px black;
+			  background-color:rgba(255,255,255,0.3);
+color:rgba(0,0,0,0.8);
+
+}
+input[type="submit"]
+{box-shadow: 10px 10px 10px grey, 0 0 10px black;
+   width:150px;
+   height:35px;
+background-color:rgba(255,255,255,0.5);
+font-family:Algerian;
+}
+ul {
+             box-shadow: 10px 10px 15px rgba(179, 71, 0,0.6), 0 0 10px rgba(128, 51, 0,0.8);
+    border-radius: 5px;
+	font-size:17px;
+    font-family:Algerian;
+    list-style-type: none;
+     font-weight:bold;
+    
+    overflow: hidden;
+    position:absolute;
+    
+		}
+		li {
+              box-sizing: border-box;   
+				
+			}
+			li a {
+				  
+				display: block;
+				
+				text-align: center;
+				padding: 14px 30px;
+				text-decoration: none;
+			}
+            a{
+			        color:rgba(0,0,0,0.8);
+			}
+			
+			li a:hover:not(.active) {
+			  box-shadow: 10px 10px 10px rgba(179, 71, 0,0.4), 0 0 10px rgba(128, 51, 0,0.8);
+				border-radius: 5px;
+
+				 background-color:rgba(255, 179, 128,0.5);
+			       color:rgba(0,0,0,0.6);
+			}
+
+</style>
+</head>
+
+<body>
+<script type="text/javascript">
+history.pushState(null,null,location.href);
+window.onpopstate=function(){
+history.go(1);};
+</script>
+
+<div class="reg">
+<form action="alchpass.php" method="POST">
+<h1>CHANGE PASSWORD</h1>
+<label>User Name:</label>
+<input type="text" name='user_name' value=""><br><br>
+<label>CURRENT PASSWORD:</label>
+<input type="password" name='cpassword' value=""><br><br>
+<label>NEW PASSWORD:</label>
+<input type="password" name='npassword' value=""><br><br>
+<label>CONFIRM PASSWORD:</label>
+<input type="password" name='rpassword' value=""><br><br>
+<input type='submit' value='Update' style="margin-left: 35%"><br><br>
+</div>
+
+</form>
+<ul>
+<li><a href="alst.html">HOME</a><br></li>
+<li><a href="profile.php">PROFILE</a><br></li>
+<li><a href="search.html">SEARCH ALUMNI</a><br></li>
+
+<li><a href="alchpass.html">CHANGE PASSWORD</a><br></li>
+<li><a href="alumni.html">LOGOUT</a></li>
+</ul>
+</ul>
+
+</body>
+</html>

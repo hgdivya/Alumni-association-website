@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Registration</title>
+<style>
+body {
+    background-image: url("images/image13.jpg");
+    height: 100%; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.reg{
+padding:40px;
+text-align:left;
+position:absolute;
+top:30px;
+left:250px;
+width:1000px;
+height:1160px;
+font-family:Algerian;
+			  box-shadow: 10px 10px 10px grey, 0 0 10px black;
+			  background-color:rgba(255,255,255,0.3);
+color:rgba(0,0,0,0.8);
+
+}
+
+.in-line { 
+  
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+}
+
+input[type="submit"]
+{box-shadow: 10px 10px 10px grey, 0 0 10px black;
+   width:150px;
+   height:35px;
+background-color:rgba(255,255,255,0.5);
+
+}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+history.pushState(null,null,location.href);
+window.onpopstate=function(){
+history.go(1);};
+</script>
+<form action="Alumni.html">
+<input type="submit"  name="" value="Back" style="font-family:Algerian;">
+</form>
+<center>
+<div class="reg">
+<h1 style="text-align:center;font-size:50px;">REGISTER!</h1>
+<form  class="form-sty" action="register.php" method="POST">
+<h2>PERSONAL DETAILS</h2>
+<div class="in-line">
+<label>First Name:</label>
+<input type="text" name='First_name' value="" required><br><br>
+
+<label style="padding:10px;" >Last Name:</label>
+<input type="text" name='Last_name' value="" required><br><br>
+</div>
+<label>DOB:</label>
+<input type="date" name='dob' value="" required><br><br>
+<label>GENDER:</label><br>
+ <input type="radio" name="gender" value="male"> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other
+
+<h2>CONTACT INFORMATION</h2>
+<label>Address:</label>
+<input type="text" name='address' value="" required><br><br>
+<label>Email ID:</label>
+<input type="email" name='email' pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value="" required><br><br>
+<label>City:</label>
+<input type="text" name='city' value="" required><br><br>
+<label>Contact no:</label>
+<input type="tel" name='contact' value="" required><br><br>
+
+<h2>ACCOUNT DETAILS</h2>
+<label>User Name:</label>
+<input type="text" name='user_name' value="" required><br><br>
+<label>Password:</label>
+<input type="password" name='password' value="" required><br><br>
+<label>Confirm Password:</label>
+<input type="password" name='c_password' value="" required><br><br>
+
+
+<h2>ACADEMIC DETAILS</h2>
+<label>Course:</label>
+<input type="text" name='course' value="" required><br><br>
+<label>Year Of Passing:</label>
+<input type="year" name='yop' value="" required><br><br>
+<label>Attach your pic(size: 10kb to 2mb):</label>
+<input type="file" name='acp' value="" required><br><br>
+
+
+<h2>JOB DEATILS</h2>
+<label>Designation:</label>
+<input type="text" name='designation' value="" required><br><br>
+<label>Organisation:</label>
+<input type="text" name='organisation' value="" required><br><br>
+
+<input type='submit' value='Submit' style="margin-left: 45%;font-family:Algerian;"><br><br><br>
+
+</form>
+
+</div>
+</center>
+</body>
+</html>
